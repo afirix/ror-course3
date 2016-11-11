@@ -1,0 +1,6 @@
+rails new places
+rails g mongoid:config
+rake db:migrate
+rake db:seed
+rails g controller photos show
+rails g scaffold_controller place formatted_address

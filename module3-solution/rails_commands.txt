@@ -1,0 +1,11 @@
+rails new triresults
+rails g mongoid:config
+rails g model RacerInfo fn ln g yr:Integer res:Address
+rails g model Racer
+rails g model Race n date:Date loc:Address
+rails g model Event o:Integer n d:Float u
+rails g model Entrant bib:Integer secs:Float o:Placing gender:Placing group:Placing
+rails g model LegResult secs:Float
+rails g model RaceRef n date:Date
+rails g scaffold_controller Racer first_name last_name gender birth_year:Integer city state
+rails g scaffold_controller Race name date:Date city state swim_distance:Float swim_units bike_distance:Float bike_units: run_distance:Float run_units
